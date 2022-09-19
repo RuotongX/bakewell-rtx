@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    height: calc(100vh - 64px);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.bgimg {
+    filter: brightness(0.9);
+    filter: saturate(150%);
+    filter: hue-rotate(-13deg);
+}
+
+.details {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: rgb(255, 254, 254);
+    background: linear-gradient(transparent, black);
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 93.75%;
+    height: 47.5%;
+}
+
+.box{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1.5%;
+    width: 93%;
+    
+}
