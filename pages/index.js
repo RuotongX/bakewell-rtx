@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 import Header from "../components/Header.js";
 
 const DynamicPoster = dynamic(() => import("./posterSlide"));
-const DynamicAward = dynamic(() => import("./awardslide"));
+const DynamicAward = dynamic(() => import("./awardSlide"));
 const DynamicFooter = dynamic(() => import("./contactFooter"));
 
 export default function Home() {

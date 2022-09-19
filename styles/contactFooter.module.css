@@ -17,6 +17,7 @@
     font-family: "Syne";
     top: 15%;
     position: absolute;
+    letter-spacing: 0.3rem;
     left:50%;
     transform: translate(-50%);
     font-size: 84px;
@@ -61,8 +62,6 @@
     position: relative;
 }
 .button{
-    
-    
     background-color: transparent;
     border: 2px solid;
     border-color: white;

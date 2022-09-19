@@ -1,9 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import style from "../styles/contactFooter.module.css";
 import "@fontsource/oxygen-mono/400.css";
 import "@fontsource/syne/500.css";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 
 function contactFooter(props) {
   return (
@@ -22,8 +21,8 @@ function contactFooter(props) {
           <div className={style.rightRest}>LINKEDIN</div>
         </div>
         <Button className={style.button}>
-            <div className={style.buttonTxt}>CONTACT US</div>
-            <div className={style.arrow}/>
+          <div className={style.buttonTxt}>CONTACT US</div>
+          <div className={style.arrow} />
         </Button>
       </div>
     </div>

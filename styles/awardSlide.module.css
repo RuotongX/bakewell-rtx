@@ -1,0 +1,63 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-color: #F7F7F7;
+}
+.title{
+    font-weight: 500;
+    width: 42.6vw;
+    font-family: "Syne";
+    margin-top: 13vh;
+    position: absolute;
+    margin-left:3.3vw;
+    font-size: 84px;
+    line-height: 76px;
+    color:#0E1219;
+}
+.mesh{
+    position: absolute;
+    bottom:0;
+    margin-left: -6.7vw;
+    margin-bottom: -13vh;
+    width:41.5vw;
+    height: 57.8vh;
+    background-image: url(../public/Mesh2.svg);
+    transform: scaleX(-1);
+}
+.box{
+    margin-top: 13vh;
+    margin-left:50vw;
+    width: 46.9vw;
+    
+}
+.item{
+    height: 6.5vh;
+    width: 46.9vw;
+    font-weight: 500;
+    line-height: 32px;
+}
+.itemBold{
+    height: 6.5vh;
+    width: 46.9vw;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
+.itemDetail{
+    font-family: "Archivo";
+    text-align: right;
+    font-size: 16px;
+    line-height: 24px;
+    right:2.8vw;
+    position: absolute;
+}
+.number{
+    font-family: "Oxygen Mono";
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
