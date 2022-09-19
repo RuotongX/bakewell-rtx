@@ -22,7 +22,7 @@
     transform: translate(-50%);
     font-size: 84px;
     line-height: 76px;
-    color:white;
+    color:#f7f7f7;
 }
 .leftTop{
     font-family: "Oxygen Mono";
@@ -30,7 +30,7 @@
     left:7.69%;
     font-size: 12px;
     line-height: 14px;
-    color:white;
+    color:#f7f7f7;
     position: absolute;
 }
 .leftRest{
@@ -38,7 +38,7 @@
     margin-top: 20px;
     font-size: 12px;
     line-height: 14px;
-    color:white;
+    color:#f7f7f7;
     position: relative;
 }
 .rightTop{
@@ -49,7 +49,7 @@
     margin-right: 7.69%;
     font-size: 12px;
     line-height: 14px;
-    color:white;
+    color:#f7f7f7;
     position: absolute;
     text-align: right;
 }
@@ -58,13 +58,13 @@
     margin-top: 20px;
     font-size: 12px;
     line-height: 14px;
-    color:white;
+    color:#f7f7f7;
     position: relative;
 }
 .button{
     background-color: transparent;
     border: 2px solid;
-    border-color: white;
+    border-color: #f7f7f7;
     bottom: 15%;
     left:50%;
     transform: translate(-50%);
@@ -79,7 +79,7 @@
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.4rem;
-    color: white;
+    color: #f7f7f7;
 }
 .arrow{
     margin-top: 10%;

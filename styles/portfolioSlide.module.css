@@ -1,0 +1,121 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-top:-14.2vh;
+}
+
+.picture{
+    background-image: linear-gradient(rgba(14, 14, 15, 0.4),rgba(14, 14, 15, 0.4)),url("../public/2.png");
+    width: 62.1vw;
+    height: 58vh;
+    left:50vw;
+    bottom:50vh;
+    transform: translate(-50%,50%);
+    background-size:cover;
+    background-position:center;
+    position: absolute;
+    z-index: 1;
+}
+.title1{
+    font-family: 'Syne';
+    font-weight: 500;
+    font-size: 84px;
+    line-height: 76px;
+    margin-top: 8.4vh;
+    margin-left: 3vw;
+    color: #f7f7f7;
+    width: 42.9vw;
+    height: 13.4vh;
+    z-index: 2;
+    
+}
+.title2{
+    font-family: 'Syne';
+    font-weight: 500;
+    font-size: 84px;
+    line-height: 76px;
+    right:0;
+    bottom: 0;
+    margin-bottom: 12.6vh;
+    margin-right: 3.1vw;
+    color: #f7f7f7;
+    width: 42.9vw;
+    height: 13.4vh;
+    z-index: 2;
+    text-align: right;
+   position:absolute;
+}
+.text1{
+    color: #f7f7f7;
+    width: 36.25vw;
+    height: 7.1vh;
+    margin-top: 31.8vh;
+    left:50vw;
+    transform: translate(-50%);
+    font-family: 'Syne';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    position:absolute;
+    z-index: 2;
+}
+.text2{
+    margin-top: 44vh;
+    margin-right: 51vw;
+    right:0;
+    width: 14.8vw;
+    font-family: 'Archivo';
+    font-size: 16px;
+    line-height: 24px;
+    color: #f7f7f7;
+    position:absolute;
+    z-index: 2;
+}
+.text3{
+    margin-top: 44vh;
+    margin-left: 51vw;
+    width: 14.8vw;
+    font-family: 'Archivo';
+    font-size: 16px;
+    line-height: 24px;
+    color: #f7f7f7;
+    position:absolute;
+    z-index: 2;
+}
+
+.button{
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #f7f7f7;
+    left:72.7vw;
+    top: 45vh;
+    width: 16.7vw;
+    height: 9.8vh;
+    border-radius:100%;
+    position: absolute;
+    z-index: 2;
+}
+.buttonTxt{
+    margin-bottom: 10%;
+    font-family: "Syne";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.4rem;
+    color: #f7f7f7;
+    z-index: 2;
+}
+.arrow{
+    margin-top: 10%;
+    background-image: url(../public/Arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 100%;
+    position:absolute;
+    z-index: 2;
+}

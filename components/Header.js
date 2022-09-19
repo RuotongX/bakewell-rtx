@@ -13,7 +13,7 @@ import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import "@fontsource/syne/700.css";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-
+import Link from "next/Link";
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -58,7 +58,6 @@ export default function Header(props) {
       fontFamily: "Syne",
       fontSize: 16,
       color: "#FFFFFF",
-      
     },
   });
 
@@ -66,35 +65,54 @@ export default function Header(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar style={{ "background": "linear-gradient( #00000040, transparent)" }} elevation={0}>
-          
+        <AppBar
+          style={{ background: "linear-gradient( #00000040, transparent)" }}
+          elevation={0}
+        >
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Box sx={{ flexGrow: 1 }} padding={0}>
               <Grid container spacing={0}>
                 <Grid xs={2.25}>
-                    <Item sx={{ boxShadow: 0 }} onClick={()=>setdisplay(!display)}>
-                      {display && <div>EXPERTISE</div>}
-                    </Item>
-                </Grid>
-                <Grid xs={2.25}>
-                  <Item sx={{ boxShadow: 0 }}>PORTFOLIO</Item>
-                </Grid>
-                <Grid xs={3}>
-                  <Item sx={{ boxShadow: 0 }}>
-                    <img src="/Logo.svg" />
+                  <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
+                    <Link href="#expertise">
+                      <a>EXPERTISE</a>
+                    </Link>
                   </Item>
                 </Grid>
                 <Grid xs={2.25}>
-                  <Item sx={{ boxShadow: 0 }}>AWARDS</Item>
+                  <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
+                    <Link href="#portfolio">
+                      <a>PORTFOLIO</a>
+                    </Link>
+                  </Item>
+                </Grid>
+                <Grid xs={3}>
+                  <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
+                    <Link href="#poster">
+                      <a>
+                        <img src="/Logo.svg" />
+                      </a>
+                    </Link>
+                  </Item>
                 </Grid>
                 <Grid xs={2.25}>
-                  <Item sx={{ boxShadow: 0 }}>CONTACT US</Item>
+                  <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
+                    <Link href="#award">
+                      <a>AWARDS</a>
+                    </Link>
+                  </Item>
+                </Grid>
+                <Grid xs={2.25}>
+                  <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
+                    <Link href="#contact">
+                      <a>CONTACT US</a>
+                    </Link>
+                  </Item>
                 </Grid>
               </Grid>
             </Box>
           </ThemeProvider>
-          
         </AppBar>
       </HideOnScroll>
       <Toolbar />
