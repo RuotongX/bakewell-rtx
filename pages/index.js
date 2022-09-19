@@ -8,7 +8,7 @@ const DynamicPoster = dynamic(() => import("./posterSlide"));
 const DynamicAward = dynamic(() => import("./awardSlide"));
 const DynamicFooter = dynamic(() => import("./contactFooter"));
 const DynamicExpertise = dynamic(() => import("./expertiseSlide"));
-// const DynamicPortfolio = dynamic(() => import("./portfolioSlide"));
+const DynamicPortfolio = dynamic(() => import("./portfolioSlide"));
 
 export default function Home() {
   return (
@@ -27,6 +27,9 @@ export default function Home() {
       <div className={styles.backgroundPicture}>
           <div className={styles.backgroundMesh}>
             <DynamicExpertise/>
+            <div id="portfolio">
+              <DynamicPortfolio/>
+            </div>
           </div>
         </div>
       </div>

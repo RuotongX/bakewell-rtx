@@ -24,6 +24,7 @@ function awardslide(props) {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "transparent",
     ...theme.typography.body2,
+    height: 120,
     color: "#0E1219",
     display: "flex",
     alignItems: "center",
