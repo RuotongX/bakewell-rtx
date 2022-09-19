@@ -108,6 +108,34 @@
   height: 1em;
   margin-left: 0.5rem;
 }
+.continuePage{
+  width: 100vw;
+  height: 200vh;
+  background-image: linear-gradient(black,black,black,#0E1219,#2E3941,#2E3941,#79858C);
+  
+ 
+}
+
+.backgroundMesh{
+  background-image:url('../public/Mesh.svg');
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 124vh;
+  padding-top: 14.2vh;
+
+}
+.backgroundPicture{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75),#0E1219),  url("../public/2.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
 
 @media (max-width: 600px) {
   .grid {

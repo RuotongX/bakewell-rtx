@@ -17,9 +17,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-
       <DynamicPoster />
-
+      <div className={styles.continuePage}>
+      <div className={styles.backgroundPicture}>
+        <div className={styles.backgroundMesh}/>
+      </div>
+      
+      </div>
       <DynamicAward />
 
       <footer>

@@ -4,8 +4,8 @@
     display: flex;
     overflow: hidden;
     position: relative;
+    
 }
-
 .bgimg {
     object-fit: cover;
     filter: brightness(0.9);
