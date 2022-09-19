@@ -42,7 +42,7 @@ function posterslide(props) {
       />
       <div className={style.container}>
         <div className={style.details}>
-          <img src="/LogoLarge.svg" alt="next" className={style.logo} />
+          <img src="/LogoLarge.svg" className={style.logo} />
           <ThemeProvider theme={theme}>
             <Box className={style.box} sx={{ flexGrow: 2 }} padding={0}>
               <Grid container spacing={0}>

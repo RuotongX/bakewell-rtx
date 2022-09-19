@@ -7,6 +7,7 @@
 }
 
 .bgimg {
+    object-fit: cover;
     filter: brightness(0.9);
     filter: saturate(150%);
     filter: hue-rotate(-13deg);

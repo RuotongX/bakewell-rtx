@@ -1,0 +1,93 @@
+.container{
+    width: 100%;
+    height: calc(100vh * 0.296);
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.bgimg{
+    width:100%;
+    height: 100%;
+    background-image:linear-gradient(rgba(4, 14, 20, 0.7),rgba(4, 14, 20, 0.7)), url(../public/6.png);
+    background-size:cover;
+    background-position:center;
+}
+.title{
+    font-family: "Syne";
+    top: 15%;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 84px;
+    line-height: 76px;
+    color:white;
+}
+.leftTop{
+    font-family: "Oxygen Mono";
+    top: 20%;
+    left:7.69%;
+    font-size: 12px;
+    line-height: 14px;
+    color:white;
+    position: absolute;
+}
+.leftRest{
+    font-family: "Oxygen Mono";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    color:white;
+    position: relative;
+}
+.rightTop{
+    font-family: "Oxygen Mono";
+    top: 20%;
+    right:0;
+    margin-right:0;
+    margin-right: 7.69%;
+    font-size: 12px;
+    line-height: 14px;
+    color:white;
+    position: absolute;
+    text-align: right;
+}
+.rightRest{
+    font-family: "Oxygen Mono";
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 14px;
+    color:white;
+    position: relative;
+}
+.button{
+    
+    
+    background-color: transparent;
+    border: 2px solid;
+    border-color: white;
+    bottom: 15%;
+    left:50%;
+    transform: translate(-50%);
+    width: 16.7%;
+    height: 35.3%;
+    border-radius:100%;
+    position: absolute;
+}
+.buttonTxt{
+    margin-bottom: 10%;
+    font-family: "Syne";
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.4rem;
+    color: white;
+}
+.arrow{
+    margin-top: 10%;
+    background-image: url(../public/Arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40%;
+    width: 100%;
+    position:absolute;
+}

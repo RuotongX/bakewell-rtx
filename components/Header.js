@@ -66,7 +66,8 @@ export default function Header(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar color="transparent" elevation={0}>
+        <AppBar style={{ "background": "linear-gradient( #00000040, transparent)" }} elevation={0}>
+          
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Box sx={{ flexGrow: 1 }} padding={0}>
@@ -93,6 +94,7 @@ export default function Header(props) {
               </Grid>
             </Box>
           </ThemeProvider>
+          
         </AppBar>
       </HideOnScroll>
       <Toolbar />
