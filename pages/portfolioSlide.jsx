@@ -4,7 +4,7 @@ import "@fontsource/syne";
 import "@fontsource/archivo/300.css";
 import Button from "@mui/material/Button";
 
-function contactFooter(props) {
+function portfolioSlide(props) {
   return (
     <div className={style.container}>
         
@@ -21,4 +21,4 @@ function contactFooter(props) {
     </div>
   );
 }
-export default contactFooter;
+export default portfolioSlide;

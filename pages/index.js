@@ -7,7 +7,8 @@ import Header from "../components/Header.js";
 const DynamicPoster = dynamic(() => import("./posterSlide"));
 const DynamicAward = dynamic(() => import("./awardSlide"));
 const DynamicFooter = dynamic(() => import("./contactFooter"));
-const DynamicPortfolio = dynamic(() => import("./portfolioSlide"));
+const DynamicExpertise = dynamic(() => import("./expertiseSlide"));
+// const DynamicPortfolio = dynamic(() => import("./portfolioSlide"));
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <div className={styles.continuePage} id="expertise">
       <div className={styles.backgroundPicture}>
           <div className={styles.backgroundMesh}>
-            <DynamicPortfolio/>
+            <DynamicExpertise/>
           </div>
         </div>
       </div>
