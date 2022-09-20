@@ -1,17 +1,25 @@
+@keyframes animatedBackground {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 0 15%;
+    }
+  }
 .container {
     width: 100%;
-    height: calc(100vh - 64px);
+    height: calc(100vh + 64px);
+    margin-top: -64px;
     display: flex;
     overflow: hidden;
     position: relative;
-    
+    background-image: linear-gradient(#59bebe13, #92cccf13), url('../public/1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-x;
+    animation: animatedBackground 2s linear infinite alternate;
 }
-.bgimg {
-    object-fit: cover;
-    filter: brightness(0.9);
-    filter: saturate(150%);
-    filter: hue-rotate(-13deg);
-}
+
 
 .details {
     width: 100%;

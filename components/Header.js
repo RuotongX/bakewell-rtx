@@ -9,11 +9,13 @@ import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Slide from "@mui/material/Slide";
 import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
+import {styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import "@fontsource/syne/700.css";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider, createTheme,createMuiTheme } from "@mui/material/styles";
 import Link from "next/Link";
+
+
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -51,25 +53,31 @@ const Item = styled(Paper)(({ theme }) => ({
   letterSpacing: 3,
 }));
 
+
+
 export default function Header(props) {
   const [display, setdisplay] = React.useState(true);
   const theme = createTheme({
+    
     typography: {
       fontFamily: "Syne",
       fontSize: 16,
       color: "#FFFFFF",
     },
   });
+  
 
   return (
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
+      
         <AppBar
           style={{ background: "linear-gradient( #00000040, transparent)" }}
           elevation={0}
         >
           <ThemeProvider theme={theme}>
+          
             <CssBaseline />
             <Box sx={{ flexGrow: 1 }} padding={0}>
               <Grid container spacing={0}>
@@ -112,8 +120,10 @@ export default function Header(props) {
                 </Grid>
               </Grid>
             </Box>
-          </ThemeProvider>
+          
+            </ThemeProvider>
         </AppBar>
+        
       </HideOnScroll>
       <Toolbar />
     </React.Fragment>
