@@ -119,3 +119,10 @@
     position:absolute;
     z-index: 2;
 }
+.buttonanime{
+    width: 16.7vw;
+    height: 9.8vh;
+    position: absolute;
+    left:72.7vw;
+    top: 45vh;
+}
