@@ -7,18 +7,18 @@
     
 }
 
-.picture1Select{
+.picture1true{
     background-image: url("../public/5.png");
     width: 65.4vw;
     height: 59.2vh;
-    margin-left:70vw;
+    margin-left:32vw;
     margin-top:10vh;
     background-size:cover;
     background-position:center;
     position: absolute;
     z-index: 3;
 }
-.picture1Unselect{
+.picture1false{
     background-image: linear-gradient(rgba(14, 14, 15, 0.4),rgba(14, 14, 15, 0.4)),url("../public/5.png");
     width: 65.4vw;
     height: 59.2vh;
@@ -29,18 +29,18 @@
     position: absolute;
     z-index: 0;
 }
-.picture2Select{
+.picture2true{
     background-image: url("../public/4.png");
     width: 65.4vw;
     height: 59.2vh;
-    margin-left:60vw;
-    margin-top:25vh;
+    margin-left:30vw;
+    margin-top:20vh;
     background-size:cover;
     background-position:center;
     position: absolute;
     z-index: 4;
 }
-.picture2Unselect{
+.picture2false{
     background-image: linear-gradient(rgba(14, 14, 15, 0.4),rgba(14, 14, 15, 0.4)),url("../public/4.png");
     width: 65.4vw;
     height: 59.2vh;
@@ -51,18 +51,18 @@
     position: absolute;
     z-index: 1;
 }
-.picture3Select{
+.picture3true{
     background-image: url("../public/3.png");
     width: 65.4vw;
     height: 59.2vh;
-    margin-left:45vw;
-    margin-top:40vh;
+    margin-left:30vw;
+    margin-top:30vh;
     background-size:cover;
     background-position:center;
     position: absolute;
     z-index: 5;
 }
-.picture3Unselect{
+.picture3false{
     background-image: linear-gradient(rgba(14, 14, 15, 0.4),rgba(14, 14, 15, 0.4)),url("../public/3.png");
     width: 65.4vw;
     height: 59.2vh;
@@ -91,7 +91,7 @@
     width: 32vw;
     height: 13.4vh;
 }
-.case{
+.casetrue{
     font-family: 'Syne';
     font-weight: 500;
     font-size: 64px;
@@ -101,7 +101,7 @@
     height: 5vh;
     margin-top:30px;
 }
-.caseUnselect{
+.casefalse{
     font-family: 'Syne';
     font-weight: 500;
     font-size: 32px;
@@ -161,7 +161,7 @@
     z-index: 2;
 }
 
-.numberSelect{
+.numbertrue{
     font-family: "Oxygen Mono";
     font-size: 12px;
     line-height: 14px;
@@ -169,7 +169,7 @@
     margin-bottom: 15px;
     color: #f7f7f7;
 }
-.numberUnselect{
+.numberfalse{
     font-family: "Oxygen Mono";
     font-size: 12px;
     line-height: 14px;

@@ -14,6 +14,34 @@ import Grid from "@mui/material/Grid";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 function portfolioSlide(props) {
+    const [case1select,setCase1select] = React.useState(false);
+    const [case2select,setCase2select] = React.useState(false);
+    const [case3select,setCase3select] = React.useState(false);
+    var case1picture = case1select?style.picture1true:style.picture1false;
+    var case2picture = case2select?style.picture2true:style.picture2false;
+    var case3picture = case3select?style.picture3true:style.picture3false;
+    var case1 = case1select?style.casetrue:style.casefalse;
+    var case2 = case2select?style.casetrue:style.casefalse;
+    var case3 = case3select?style.casetrue:style.casefalse;
+    var case1number = case1select?style.numbertrue:style.numberfalse;
+    var case2number = case2select?style.numbertrue:style.numberfalse;
+    var case3number = case3select?style.numbertrue:style.numberfalse;
+    function selectCase1Action() {
+        setCase1select(!case1select);
+        setCase2select(false);
+        setCase3select(false);
+    }
+    function selectCase2Action() {
+        setCase2select(!case2select);
+        setCase1select(false);
+        setCase3select(false);
+    }
+    function selectCase3Action() {
+        setCase3select(!case3select);
+        setCase1select(false);
+        setCase2select(false);
+    }
+
   const theme = createTheme({
     typography: {
       fontFamily: "Syne",
@@ -39,20 +67,20 @@ function portfolioSlide(props) {
         <Box className={style.box} sx={{ flexGrow: 3 }} padding={0}>
           <Grid container spacing={0} direction="column">
             <Grid xs={10}>
-              <Item className={style.caseUnselect} sx={{ boxShadow: 0 }}>
-                <div className={style.numberUnselect}>[01]</div>
+              <Item className={case1} sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }} onClick={()=>selectCase1Action()}>
+                <div className={case1number}>[01]</div>
                 CASE STUDY
               </Item>
             </Grid>
             <Grid xs={10}>
-              <Item className={style.caseUnselect} sx={{ boxShadow: 0 }}>
-                <div className={style.numberUnselect}>[02]</div>
+              <Item className={case2} sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }} onClick={()=>selectCase2Action()}>
+                <div className={case2number}>[02]</div>
                 CASE STUDY
               </Item>
             </Grid>
             <Grid xs={10}>
-              <Item className={style.case} sx={{ boxShadow: 0 }}>
-                <div className={style.numberSelect}>[03]</div>
+              <Item className={case3} sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }} onClick={()=>selectCase3Action()}>
+                <div className={case3number}>[03]</div>
                 CASE STUDY
               </Item>
             </Grid>
@@ -60,9 +88,9 @@ function portfolioSlide(props) {
         </Box>
       </ThemeProvider>
 
-      <div className={style.picture3Select} />
-      <div className={style.picture2Unselect} />
-      <div className={style.picture1Unselect} />
+      <div className={case3picture} />
+      <div className={case2picture} />
+      <div className= {case1picture} />
       <div className={style.text}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu in venenatis
         id laoreet enim. Interdum in orci vitae feugiat quam urna. Pretium netus
