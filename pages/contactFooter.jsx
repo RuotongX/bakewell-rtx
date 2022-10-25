@@ -4,7 +4,7 @@ import "@fontsource/oxygen-mono/400.css";
 import "@fontsource/syne/500.css";
 import Button from "@mui/material/Button";
 
-function contactFooter(props) {
+function ContactFooter(props) {
   return (
     <div className={style.container}>
       <div className={style.bgimg}>
@@ -28,4 +28,4 @@ function contactFooter(props) {
     </div>
   );
 }
-export default contactFooter;
+export default ContactFooter;

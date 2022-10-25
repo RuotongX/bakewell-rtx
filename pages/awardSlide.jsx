@@ -1,19 +1,19 @@
 import React from "react";
-import style from "../styles/awardSlide.module.css";
-import "@fontsource/syne";
-import "@fontsource/oxygen-mono/400.css";
-import "@fontsource/archivo/300.css";
+import { styled } from "@mui/material/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Slide from "@mui/material/Slide";
 import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Link from "next/Link";
+import style from "../styles/awardSlide.module.css";
+import "@fontsource/syne";
+import "@fontsource/oxygen-mono/400.css";
+import "@fontsource/archivo/300.css";
 
-function awardslide(props) {
+function Awardslide(props) {
   const theme = createTheme({
     typography: {
       fontFamily: "Syne",
@@ -37,7 +37,7 @@ function awardslide(props) {
       <ThemeProvider theme={theme}>
         <Box className={style.box} sx={{ flexGrow: 10 }} padding={0}>
           <Grid container spacing={0} direction="column">
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
                 <div className={style.number}>
                     [01]
@@ -48,7 +48,7 @@ function awardslide(props) {
                 </div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [02]
@@ -57,7 +57,7 @@ function awardslide(props) {
                 <div className={style.itemDetail}>YD 37.11M Club Racer</div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [03]
@@ -66,7 +66,7 @@ function awardslide(props) {
                 <div className={style.itemDetail}>13.7M IRC Race Yacht</div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [04]
@@ -75,7 +75,7 @@ function awardslide(props) {
                 <div className={style.itemDetail}>11.3M IRC Race Yacht</div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [05]
@@ -84,7 +84,7 @@ function awardslide(props) {
                 <div className={style.itemDetail}>30m Super-Maxi</div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [06]
@@ -95,7 +95,7 @@ function awardslide(props) {
                 </div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [07]
@@ -106,7 +106,7 @@ function awardslide(props) {
                 </div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [08]
@@ -117,7 +117,7 @@ function awardslide(props) {
                 </div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [09]
@@ -129,7 +129,7 @@ function awardslide(props) {
               </Item>
             </Grid>
             
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item className={style.item} sx={{ boxShadow: 0, borderTop: 2 }}>
               <div className={style.number}>
                     [10]
@@ -140,7 +140,7 @@ function awardslide(props) {
                 </div>
               </Item>
             </Grid>
-            <Grid xs={4}>
+            <Grid item={true} xs={4}>
               <Item
                 className={style.itemBold}
                 sx={{
@@ -160,4 +160,4 @@ function awardslide(props) {
   );
 }
 
-export default awardslide;
+export default Awardslide;

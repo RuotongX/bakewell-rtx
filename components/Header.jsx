@@ -81,37 +81,37 @@ export default function Header(props) {
             <CssBaseline />
             <Box sx={{ flexGrow: 1 }} padding={0}>
               <Grid container spacing={0}>
-                <Grid xs={2.25}>
+                <Grid item={true} xs={2.25}>
                   <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
                     <Link href="#expertise">
                       <a>EXPERTISE</a>
                     </Link>
                   </Item>
                 </Grid>
-                <Grid xs={2.25}>
+                <Grid item={true} xs={2.25}>
                   <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
                     <Link href="#portfolio">
                       <a>PORTFOLIO</a>
                     </Link>
                   </Item>
                 </Grid>
-                <Grid xs={3}>
+                <Grid item={true} xs={3}>
                   <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
                     <Link href="#poster">
                       <a>
-                        <img src="/Logo.svg" />
+                        <img src="/Logo.svg"  alt='title'/>
                       </a>
                     </Link>
                   </Item>
                 </Grid>
-                <Grid xs={2.25}>
+                <Grid item={true} xs={2.25}>
                   <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
                     <Link href="#award">
                       <a>AWARDS</a>
                     </Link>
                   </Item>
                 </Grid>
-                <Grid xs={2.25}>
+                <Grid item={true} xs={2.25}>
                   <Item sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }}>
                     <Link href="#contact">
                       <a>CONTACT US</a>

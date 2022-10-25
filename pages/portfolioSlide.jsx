@@ -13,7 +13,7 @@ import { styled } from "@mui/material/styles";
 import Grid from "@mui/material/Grid";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-function portfolioSlide(props) {
+function PortfolioSlide(props) {
     const [case1select,setCase1select] = React.useState(false);
     const [case2select,setCase2select] = React.useState(false);
     const [case3select,setCase3select] = React.useState(false);
@@ -66,19 +66,19 @@ function portfolioSlide(props) {
       <ThemeProvider theme={theme}>
         <Box className={style.box} sx={{ flexGrow: 3 }} padding={0}>
           <Grid container spacing={0} direction="column">
-            <Grid xs={10}>
+            <Grid item={true} xs={10}>
               <Item className={case1} sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }} onClick={()=>selectCase1Action()}>
                 <div className={case1number}>[01]</div>
                 CASE STUDY
               </Item>
             </Grid>
-            <Grid xs={10}>
+            <Grid item={true} xs={10}>
               <Item className={case2} sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }} onClick={()=>selectCase2Action()}>
                 <div className={case2number}>[02]</div>
                 CASE STUDY
               </Item>
             </Grid>
-            <Grid xs={10}>
+            <Grid item={true} xs={10}>
               <Item className={case3} sx={{ boxShadow: 0 }} style={{ cursor: "pointer" }} onClick={()=>selectCase3Action()}>
                 <div className={case3number}>[03]</div>
                 CASE STUDY
@@ -104,4 +104,4 @@ function portfolioSlide(props) {
     </div>
   );
 }
-export default portfolioSlide;
+export default PortfolioSlide;

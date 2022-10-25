@@ -4,11 +4,11 @@ import styles from "../styles/Home.module.css";
 import dynamic from "next/dynamic";
 import Header from "../components/Header.jsx";
 
-const DynamicPoster = dynamic(() => import("./posterSlide"));
-const DynamicAward = dynamic(() => import("./awardSlide"));
-const DynamicFooter = dynamic(() => import("./contactFooter"));
-const DynamicExpertise = dynamic(() => import("./expertiseSlide"));
-const DynamicPortfolio = dynamic(() => import("./portfolioSlide"));
+const DynamicPoster = dynamic(() => import("./PosterSlide"));
+const DynamicAward = dynamic(() => import("./AwardSlide"));
+const DynamicFooter = dynamic(() => import("./ContactFooter"));
+const DynamicExpertise = dynamic(() => import("./ExpertiseSlide"));
+const DynamicPortfolio = dynamic(() => import("./PortfolioSlide"));
 
 export default function Home() {
   return (

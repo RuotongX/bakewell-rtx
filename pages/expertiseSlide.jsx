@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 import { useSpring, animated } from 'react-spring';
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
-function expertiseSlide(props) {
+function ExpertiseSlide(props) {
   const buttonAnimate = useSpring({
     loop: { reverse: true },
     from: { y: 0 },
@@ -60,4 +60,4 @@ function expertiseSlide(props) {
     </div>
   );
 }
-export default expertiseSlide;
+export default ExpertiseSlide;
